@@ -46,6 +46,12 @@ public class VariableExample5 {
 		
 		
 		
-		System.out.println("줄 바꼈나요??");
+		System.out.println("내가 추가한 내용");
+		
+		
+		// 주석
+		System.out.println("새로운 코드");
+		int aaa = 10;
+		
 	}
 }
