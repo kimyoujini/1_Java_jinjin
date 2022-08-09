@@ -12,7 +12,9 @@ public class ConditionRun {
 		// ex.test2();
 		
 		// ex.ex1();
-		ex.ex2();
+		// ex.ex2();
+		//ex.ex3();
+		ex.ex4();
 		
 		
 		

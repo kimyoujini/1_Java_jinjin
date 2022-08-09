@@ -30,7 +30,7 @@ public class ConditionExample {
 	    *     }
 	    * */
 	   
-	   Scanner sc = new Scanner(System.in);
+	  Scanner sc = new Scanner(System.in);
 	  
 	  System.out.print("정수 입력 : "); 
 	  int input = sc.nextInt();
@@ -39,18 +39,18 @@ public class ConditionExample {
 	  // 입력된 정수가 짝수인지 검사 (0도 짝수 취급)
 	  if(input % 2 == 0) {
 		  System.out.println("짝수입니다.");	  
-	  }
+	      }
 	 
 	  //홀수
 	  if(input % 2 != 0) {
 	    System.out.println("홀수 입니다.");  
-	  }
+	      }
 	  
 	  System.out.println("[if문 예시 1 종료]");	 
-      }   
+         }   
 	 
 
-     public void ex2( ) {
+     public void ex2() {
     	 System.out.println("[if문 예시 2]");
     	 
     	 Scanner sc = new Scanner(System.in);
@@ -69,19 +69,98 @@ public class ConditionExample {
     		 
     		 /* 중첩 if 문*/
     		
-    		 if(input  ==0) { // 짝수인 경우
-    		    System.out.println("0 입니다.");
-    		 } else {
-    			 System.out.println("짝수 입니다.");
-    		 }
-    		 
-    		
+    	 if(input  ==0) { // 0인 경우
+    	System.out.println("0 입니다.");
+         } else {
+    	System.out.println("짝수 입니다.");
+    	}   		 	
     	 }
     	 
-    	 System.out.println("[if문 예시 2 종료]");
-    	 	 
-
+    	 System.out.println("[if문 예시 2 종료]");	 	 
      }
+     
+     
+     
+     
+     public void ex3() {
+    	 
+    	 // if - else if - else
+    	 
+    	 Scanner sc = new Scanner(System.in);
+    	 
+    	 System.out.print("1~12 사이의 정수를 입력해주세요 : " );
+    	 int input = sc.nextInt();
+    	 
+    	 String season; // 변수 선언
+    	 
+    	 if(input >= 3 && input <=5) {
+    		 season = "봄";
+    		 
+    	 } else if(input >= 6 && input <=8) {
+    		 season = "여름";
+    		 
+    	 } else if(input >=9 && input <=11) {
+    		 season = "가을";
+    		 
+    	 } else if(input == 12 || input == 1 || input ==2)	{
+    		 season = "겨울";
+    		 
+    	 } else {
+    		 season = "해당하는 계절이 없습니다.";
+    	 }
+    	 
+    	 System.out.println(season);
+    	 
+     }
+     
+     
+     public void ex4() {
+         //나이를 입력 받아
+    	 //13세 이하면 "어린이"
+         // 13세 초과, 19세 이하면 "청소년
+    	 // 19세 초과시 "성인"을 출력
+    	 
+    	 Scanner sc = new Scanner(System.in);
+    	 
+    	 System.out.print("나이를 입력해주세요 : ");
+    	 int age = sc.nextInt();
+    	 
+    	 String result;
+    	 
+    	 if(age <=13) {
+    		 result = "어린이";
+    		 
+    	 } else if(age <= 19) {
+    		 result = "청소년";
+    		 
+    	 } else {
+    		 result = "성인";
+    	     
+    	 } 	 
+    		
+    	 System.out.println(result);
+    	 
+     }
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+     }
+    	 
+     
  
 	 
 	 
