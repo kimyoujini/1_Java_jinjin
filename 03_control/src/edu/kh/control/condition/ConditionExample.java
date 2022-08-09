@@ -32,22 +32,22 @@ public class ConditionExample {
 	   
 	  Scanner sc = new Scanner(System.in);
 	  
-	  System.out.print("정수 입력 : "); 
-	  int input = sc.nextInt();
+	 // System.out.print("정수 입력 : "); 
+	 // int input = sc.nextInt();
 	  
 	  
 	  // 입력된 정수가 짝수인지 검사 (0도 짝수 취급)
-	  if(input % 2 == 0) {
-		  System.out.println("짝수입니다.");	  
-	      }
+	 // if(input % 2 == 0) {
+		  //System.out.println("짝수입니다.");	  
+	     // }
 	 
 	  //홀수
-	  if(input % 2 != 0) {
-	    System.out.println("홀수 입니다.");  
-	      }
+	  //if(input % 2 != 0) {
+	   // System.out.println("홀수 입니다.");  
+	     // }
 	  
-	  System.out.println("[if문 예시 1 종료]");	 
-         }   
+	 // System.out.println("[if문 예시 1 종료]");	 
+        // }   
 	 
 
      public void ex2() {
@@ -141,22 +141,68 @@ public class ConditionExample {
     	 System.out.println(result);
     	 
      }
+     
+     public void ex5() {
+    	 // 놀이기구 탑승 제한 검사
+    	 
+    	 // 나이가 12세 이상, 키 140.0cm 이상 일 경우에만 "탑승 가능"
+    	 
+    	 //나이가 12미만인 경우 : "적정 연령이 아닙니다."
+    	 //키가 140.0cm 미만 : "적정 키가 아닙니다."
+    	 // 나이를 0세 미만, 100세 초과 시 : "잘못 입력하셨습니다."
+    	 
+    	 Scanner sc = new Scanner(System.in);
+    	 
+    	 System.out.print("나이 입력 : ");
+    	 int age = sc.nextInt();
+    	 
+    	 System.out.print("키 입력 : ");
+    	 double height = sc.nextDouble();
+    	 
+    	 String result;
+    	 
+    	/* if(age < 0 || age > 100) {  // 0세 미만 100세 초과
+    		 result = "잘못 입력 하셨습니다.";
+    				 
+    	 } else {
+    		 
+    		 if(age < 12) { // 12세 미만
+    		 result = "적정 연령이 아닙니다";
+    		 
+    	 } else { // 12세 이상
+    		 
+    		 if(height < 140.0) { // 140.0 미만
+    		 result = "적정 키가 아닙니다.";
+    				 
+    	 } else{
+    		 result = "탑승 가능";
+    		 
+    	 } 
+    	
+     }
+    	 
+  }*/
+    	 
+    	 if(age < 0 || age > 100) {
+    		 result = "잘못 입력하셨습니다.";
+    		 
+    	 } else if(age < 12) {
+    		 result = "적정 연령이 아닙니다.";
+    		 
+    	 } else if(height < 140.0) {
+    		 result = "적정 키가 아닙니다.";
+    		 
+    	 } else {
+    		 result = "탑승 가능";
+    	 }
+    	 
+    	 System.out.println(result);
     	 
     	 
     	 
+     }
     	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
-    	 
+ 
     	 
      }
     	 
@@ -164,5 +210,5 @@ public class ConditionExample {
  
 	 
 	 
-}
+//}
 
