@@ -19,10 +19,11 @@ public class ForExample {
 	 * 
 	 */
 
-	// for문 기초 사용법 1
-	// 1 ~ 10까지 반복 출력
+	
 	public void ex1() {
-
+		// for문 기초 사용법 1
+		// 1 ~ 10까지 반복 출력
+		
 		for (int i = 1; i <= 10; i++) {
 			// 1)초기식 ; 2,5)조건식 ; 4,7)증감식
 
@@ -34,10 +35,11 @@ public class ForExample {
 
 	}
 
-	// for문 기초 사용법 2
-	// 5부터 12까지 1씩 증가하면서 출력
+	
 	public void ex2() {
-
+		// for문 기초 사용법 2
+		// 5부터 12까지 1씩 증가하면서 출력
+		
 		for (int i = 5; i < 13; i++) {
 			// 1) ; 2,5) ; 4,7)
 
@@ -45,7 +47,7 @@ public class ForExample {
 			System.out.println(i + "출력");
 
 		}
-		System.out.println("=================");
+			System.out.println("=================");
 
 		// 1부터 50까지의 모든 정수의 합
 
@@ -62,18 +64,19 @@ public class ForExample {
 
 		}
 
-		System.out.println("1 ~ 100 까지의 합 : " + sum);
+			System.out.println("1 ~ 100 까지의 합 : " + sum);
 
 	}
 
-	// for 기초 사용법 3
-	// 두 정수를 입력 받아
-	// 두 정수 사이의 모든 정수 합을 출력
-	// (num1 부터 num2까지)
-	// 단, 첫번째 입력이 두번재 입력 보다 작아야한다.
+	
 
 	public void ex3() {
-
+		// for 기초 사용법 3
+		// 두 정수를 입력 받아
+		// 두 정수 사이의 모든 정수 합을 출력
+		// (num1 부터 num2까지)
+		// 단, 첫번째 입력이 두번재 입력 보다 작아야한다.
+		
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("정수1 입력 : ");
@@ -92,11 +95,12 @@ public class ForExample {
 
 	}
 
-	// for 기초 사용법 4
-	// 1부터 100까지 3씩 증가하며 출력
-	// 1 4 7 10 13 16 19 22 25 28 31 ...
+	
 	public void ex4() {
-
+		// for 기초 사용법 4
+		// 1부터 100까지 3씩 증가하며 출력
+		// 1 4 7 10 13 16 19 22 25 28 31 ...
+		
 		for(int i = 1; i <= 100; i += 3) {
 
 			// 1씩 증가 == i++ == i = i + 1
@@ -104,7 +108,6 @@ public class ForExample {
 
 			System.out.print(i + " ");
 			// 띄어쓰기
-
 		}
 
 		System.out.println("\n=================================================");
@@ -118,10 +121,12 @@ public class ForExample {
 
 	}
 
-	// for문 + char + 자동/강제 형변환 응용
-	// A ~ Z 까지 출력
+	
 	public void ex5() {
-
+		// for문 + char + 자동/강제 형변환 응용
+		// A ~ Z 까지 출력
+		
+		
 //		for(int i = 'A'; i <= 'Z' ; i++) {
 //			System.out.println( (char)i );
 //		}
@@ -131,25 +136,22 @@ public class ForExample {
 		}
 	}
 
+	
 	public void ex6() { // [응용]
-
 		// 10부터 1까지 1씩 감소하면서 출력
 
-		// for(int i = 1 ; i <= 10 ; i++) {}
+//      for(int i = 1 ; i <= 10 ; i++) {}
 		for(int i = 10; i >= 1; i--) {
 
 			// 조건식이 true인 경우에 수행될 코드
 			System.out.println(i);
-
 		}
-
 	}
+	
 
 	public void ex7() { // [응용]
-		 
-		 // 입력, sum, for 응용
-		 
-		 // 정수 5개를 입력 받아 합계 구하기
+		  // 입력, sum, for 응용
+		// 정수 5개를 입력 받아 합계 구하기
 		 
 		 Scanner sc = new Scanner(System.in);
 		 
@@ -167,6 +169,7 @@ public class ForExample {
 	 
 	 }
 
+	
 	public void ex8() {
 		 // 정수를 몇 번 입력 받을지 먼저 입력 받고
 	     // 입력된 정수의 합계를 출력
@@ -183,8 +186,7 @@ public class ForExample {
 		 }
 		
 		 System.out.println("합계 : " + sum);
-		 
-	
+
 		 }		 
 	      // ex)
 	      // 입력 받을 정수의 개수 : 3
@@ -198,14 +200,13 @@ public class ForExample {
 	      // 입력 1 : 10
 	      // 입력 2 : 20
 	      // 합계 : 30 
-		 
+	
+	
+	
 	public void ex9() { // [기초]
-		
 		// for, %(나머지), if-else
-		
 		// 1부터 20까지 1씩 증가하며 출력
 		// 단, 5의 배수에는 ()를 붙여서 출력
-		
 		// ex) 1 2 3 4 (5) 6 7 8 9 (10) 11 12 13 14 (15) 16 17 18 19 (20)
 		
 		Scanner sc = new Scanner(System.in);
@@ -216,13 +217,14 @@ public class ForExample {
 				System.out.print( "(" + i + ")" );
 			} else { // 5의 배수가 아닌 경우
 				System.out.print(i + " ");
-			}
+            }
 	 }
   }
 	
+
+	
 	
 	public void ex10() { // [응용]
-		
 		// for, if, Scanner, 논리연산자, print 메서드
 		
 		// 구구단 출력
@@ -278,7 +280,6 @@ public class ForExample {
 	// [중첩 반복문]
 
 	public void ex11() {
-		
 		//12345
 		//12345
 		//12345
@@ -295,8 +296,9 @@ public class ForExample {
 		    }	
 	    }
 	
+	
+	
 		public void ex12() { // 응용
-			
 			// 구구단 2단부터 9단까지 모두 출력
 			
 			// 2x1=2 2x2=4 2x3=6
@@ -308,19 +310,203 @@ public class ForExample {
 		for(int dan = 2; dan <= 9; dan++) {
 			
 			for(int i = 1; i <=9; i++) {
-				System.out.printf("%dX%d=%2d ", dan, i, dan*i);			
+				System.out.printf("%dX%d=%2d ", dan, i, dan*i);	
+				// %2d : 정수가 출력될 칸을 2칸 확보하고 오른쪽 정렬하여 출력
+				
+			
 		    }
 			
 			System.out.println(); // 줄바꿈
 		}	
 			
-			
-			
+}
 		
+		
+		public void ex13() {
+			
+			// 2중 for문을 이용하여 다음 모양을 출력하세요.
+			
+			//1
+			//12
+			//123
+			//1234
+			
+			//1234
+			//1234
+			//1234
+			//1234
+			
+			for(int x = 1; x <= 4; x++) { // 4번 반복
+				
+				//1234
+			    for(int i = 1; i <=4; i++) {
+			    	System.out.print(i);
+			    }
+			
+			System.out.println(); // 줄 바꿈
 			
 		}
 		
+	}
 		
+		
+		public void ex14() {
+			// 2중 for문을 이용하여 다음 모양을 출력하세요.
+			
+			//4
+			//43
+			//432
+			//4321
+			
+			//4321
+			//4321
+			//4321
+			//4321
+			
+			for(int x = 4 ; x >= 1 ; x--) {
+				
+				for(int i =4  ; i >= x ; i--) {
+					System.out.print(i);
+				}
+				
+				System.out.println();
+			}
+			
+//			for(int x  = 1 ; x <=4 ; x++) {
+//				
+//				for(int i = 4 ; i >= 5-x ; i--) { 
+//					System.out.print(i);
+//				}
+//				
+//				System.out.println();
+//			}
+		}
+		
+		
+		
+		
+			public void ex15() {
+				// 2중 for문을 이용하여 다음 모양을 출력하세요.
+				
+				//입력된 정수 : 4
+				//4321
+				//321
+				//21
+				//1
+				
+				//입력된 정수 : 5
+				//54321
+				//4321
+				//321
+				//21
+				//1
+				
+				Scanner sc = new Scanner(System.in);
+				
+				System.out.print("입력된 정수 : ");
+		        int input = sc.nextInt();
+		        
+		        for(int x= input ; x >=1 ; x --) {
+		         
+		        	// 54321 같이 한 줄 출력
+		        	for(int i = x; i >=1; i--) {
+		        		System.out.print(i);		
+		        }
+		        	
+		        	System.out.println(); // 줄 바꿈
+		       
+		    } 		
+		}
+			
+		
+			
+			
+			public void ex16() {
+				
+				// 2중 for문을 이용하여 다음 모양을 출력하세요.
+				
+				//*
+				//**
+				//***
+				//****
+				//*****
+				
+				// row == 행(한 줄), column == 열(한 칸)
+				for(int row=1; row<=5; row++) {
+					
+					for(int col=1; col<=row; col++) {
+						System.out.print("*");
+					}
+					
+					System.out.println();
+						
+				}
+			}
+	
+			
+			
+			
+			public void ex17() {
+				
+				// 합계 : sum 
+				// 개수 : count
+				
+				// * count, %(나머지), for문을 이용한 검색
+				
+				// 1 부터 20 사이의 3의 배수의 개수 출력
+				
+				// ex) 3 6 9 12 15 18
+				//      sum : 63   
+				//      count : 6
+				
+				int sum = 0;
+				int count = 0; // 수를 셀 때는 0부터 1씩 증가시키면서 세는 것이 보통
+				
+				
+				for(int i = 1 ; i <= 20 ; i++) {
+					
+					//3의 배수만 출력
+					if(i % 3 == 0) {
+						System.out.print(i+ " ");
+						sum += i; //누적
+						count++; // 1증가
+					}
+				}
+				
+				// \n : 개행문자
+				System.out.println("\nsum : " + sum);
+				System.out.println("count : " + count);
+			
+			}
 
+	
+			
+			
+			
+			public void ex18() {
+				
+				// 2중 for문과 count를 이용해서 아래 모양 출력하기
+				
+				//  1  2  3  4
+				//  5  6  7  8 
+				//  9 10 11 12    //3행 4열
+				
+				int count = 1;
+				
+				for(int row=1; row<=3; row++) {
+					
+					for(int col=1; col<=4; col++) {
+						//System.out.printf("%3d",count);
+						//count++;
+						
+						System.out.printf("%3d", count++);
+						// 후위 증감 연산을 이용하여
+						// 출력 후 count 값을 1 증가
+					}
+					
+					System.out.println(); // 줄바꿈
+               }
+			
+			}	
 		
 	}
