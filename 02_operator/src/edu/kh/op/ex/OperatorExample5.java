@@ -56,14 +56,6 @@ public class OperatorExample5 {
 		
 		System.out.println(result);
 		
-		
-				
-		
-		
-		
-		
-		
-		
 	}
 
 }

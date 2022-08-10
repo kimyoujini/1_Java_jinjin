@@ -1,6 +1,6 @@
 package edu.kh.op.ex;
 
-public class OperatoExample3 {
+public class OperatorExample3 {
    public static void main(String[] args) {
 	
 	  // 비교 연산자 : == , != , > , < , >= , <=   

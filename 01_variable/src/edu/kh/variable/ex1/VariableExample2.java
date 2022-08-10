@@ -73,7 +73,7 @@ public class VariableExample2 {
 		System.out.println(bNum);
 		System.out.println(sNum);
 		System.out.println(fNum);
-		System.out.println(bNum);
+		System.out.println(dNum);
 		System.out.println(ch1);
 		System.out.println(ch2);
 		

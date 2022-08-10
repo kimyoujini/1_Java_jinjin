@@ -21,7 +21,7 @@ public class OperatorPractice2 {
 	  // sc.nextLine() : 한 문장(한 줄) 입력, 띄어쓰기 포함
 	  //             -> 엔터가 입력 종료를 의미
 	  
-	  Scanner sc = new Scanner(System.in);
+	  Scanner sc = new Scanner(System.in); 
 	  
 	  System.out.print("이름 : ");
 	  String name = sc.next();
@@ -62,4 +62,4 @@ public class OperatorPractice2 {
   
   
   }
-}
+  }

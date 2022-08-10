@@ -139,19 +139,6 @@ public class VariableExample3 {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }
