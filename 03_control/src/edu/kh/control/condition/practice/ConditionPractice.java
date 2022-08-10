@@ -205,8 +205,7 @@ public class ConditionPractice {
            }else {
         	   System.out.println("Fail [점수 미달]");
            }
-        
-	   }
+      }
 	
 	
     }
